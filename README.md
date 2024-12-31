@@ -3,7 +3,7 @@
 Ecommerce App is a full-stack web application designed for buying and managing Apple products. The project is divided into two main sections:
 
 1. **Client**: A user-facing platform for browsing, searching, and ordering Apple products. Includes email confirmation for orders using Nodemailer and a live chat feature for customer support.  
-2. **Admin**: A backend management interface for viewing, editing, and deleting products, managing orders, and tracking revenue. Admins can also manage users and oversee live chat interactions.
+2. **Admin**: Enables administrators to manage hotels (add, edit, delete), view all user transactions, and manage user accounts (including consultants and regular customers).
 
 ---
 
@@ -28,7 +28,7 @@ Ecommerce App is a full-stack web application designed for buying and managing A
 - **Email Confirmation**:
   - Receive an email confirmation of the order via **Nodemailer**.
 - **Live Chat**:
-  - Customers can chat with support staff (Admin or Tư vấn viên) for real-time assistance.
+  - Customers can chat with support staff (Admin or consultants) for real-time assistance.
 
 ### **Admin**
 
@@ -38,7 +38,7 @@ Ecommerce App is a full-stack web application designed for buying and managing A
     - View, update, and delete orders.
     - Track revenue and manage user roles.
     - Oversee live chat interactions.
-  - **Tư vấn viên**:
+  - **Consultants**:
     - Respond to customer queries in live chat.
     - Assist with product recommendations and order issues.
 - **Product Management**:
