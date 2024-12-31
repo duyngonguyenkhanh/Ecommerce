@@ -9,8 +9,8 @@ Ecommerce App is a full-stack web application designed for buying and managing A
 
 ## 🌟 Demo
 
-- **Client**: [Client Deployment Link](https://your-client-link)  
-- **Admin**: [Admin Deployment Link](https://your-admin-link)  
+- **Client**: [Client Deployment Link](https://duyngonguyenkhanh.github.io/ecommerce-app/)  
+- **Admin**: [Admin Deployment Link](https://duyngonguyenkhanh.github.io/admin-app/)  
 - **Backend**: Deployed on [Render](https://render.com).
 
 ---
