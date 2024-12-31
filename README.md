@@ -1,33 +1,97 @@
 # Ecommerce App
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue)](https://duyngonguyenkhanh.github.io/ecommerce-app/)
+Ecommerce App is a full-stack web application designed for buying and managing Apple products. The project is divided into two main sections:
 
-Ecommerce App is a website for selling Apple products with core features including viewing products, purchasing products, and checkout.
+1. **Client**: A user-facing platform for browsing, searching, and ordering Apple products. Includes email confirmation for orders using Nodemailer and a live chat feature for customer support.  
+2. **Admin**: A backend management interface for viewing, editing, and deleting products, managing orders, and tracking revenue. Admins can also manage users and oversee live chat interactions.
 
-## Demo
+---
 
-You can access the website [here](https://duyngonguyenkhanh.github.io/ecommerce-app/).
+## 🌟 Demo
 
-## Key Features
+- **Client**: [Client Deployment Link](https://your-client-link)  
+- **Admin**: [Admin Deployment Link](https://your-admin-link)  
+- **Backend**: Deployed on [Render](https://render.com).
 
-- **View Products**: Users can browse through the list of available Apple products.
-- **Product Details**: Users can view detailed information about each product.
-- **Add to Cart**: Users can add products to their shopping cart.
-- **Checkout**: Users can proceed to checkout for the products in their cart.
+---
 
-## Technologies Used
+## 🚀 Key Features
 
-- **React**: Main framework for building the user interface.
-- **React Router**: Used for routing within the application.
-- **Tailwind CSS**: Used for styling the website with utility-first CSS.
-- **Vanilla CSS**: Used for additional custom styles.
+### **Client**
 
-## Installation and Running the Project
+- **Browse Products**:
+  - View a list of Apple products with detailed descriptions and prices.
+- **Search Products**:
+  - Quickly find products by name or category.
+- **Order Products**:
+  - Add items to the cart and place orders with user details.
+- **Email Confirmation**:
+  - Receive an email confirmation of the order via **Nodemailer**.
+- **Live Chat**:
+  - Customers can chat with support staff (Admin or Tư vấn viên) for real-time assistance.
 
-To install and run the project on your local machine, follow these steps:
+### **Admin**
 
-1. **Clone the repository**:
+- **Role-based Access Control**:
+  - **Admin**:
+    - Manage products (add, edit, delete).
+    - View, update, and delete orders.
+    - Track revenue and manage user roles.
+    - Oversee live chat interactions.
+  - **Tư vấn viên**:
+    - Respond to customer queries in live chat.
+    - Assist with product recommendations and order issues.
+- **Product Management**:
+  - Add, edit, and delete product details (name, category, price, stock, etc.).
+- **Order Management**:
+  - View customer orders and update order statuses.
+- **Revenue Tracking**:
+  - Calculate and display total revenue from sales.
 
-   ```bash
-   git clone https://github.com/duyngonguyenkhanh/ecommerce-app.git
-   cd ecommerce-app
+---
+
+## 🛠️ Technologies Used
+
+### **Frontend**
+- **ReactJS**: For building user interfaces.  
+- **React Router**: For navigation between pages.  
+- **Tailwind CSS**: For responsive and modern styling.  
+- **Socket.IO**: For real-time live chat.
+
+### **Backend**
+- **Node.js**: Server-side JavaScript runtime.  
+- **Express.js**: For creating RESTful API endpoints.  
+- **MongoDB**: For storing product, order, and user data.  
+- **Nodemailer**: For sending email confirmations.  
+- **Socket.IO**: For handling live chat communication.  
+- **JWT**: For authentication and secure sessions.
+
+### **Deployment**
+- **Frontend**: Deployed on GitHub Pages or other hosting platforms.  
+- **Backend**: Deployed on Render.
+
+---
+
+## 📁 Project Structure
+
+```plaintext
+ecommerce-app/
+├── client/             # Frontend (ReactJS)
+│   ├── public/         # Static files
+│   ├── src/
+│   │   ├── components/ # Reusable components
+│   │   ├── pages/      # Client pages (Home, Product, Checkout, etc.)
+│   │   ├── hooks/      # Custom hooks for logic handling
+│   │   └── App.js      # Route configuration
+├── admin/              # Admin Panel (ReactJS)
+│   ├── src/
+│   │   ├── components/ # Admin UI components
+│   │   ├── pages/      # Admin pages (Dashboard, Manage Orders, etc.)
+│   │   └── App.js      # Route configuration
+├── server/             # Backend (Node.js)
+│   ├── models/         # MongoDB schemas
+│   ├── routes/         # API routes
+│   ├── controllers/    # API logic handlers
+│   ├── sockets/        # Socket.IO for live chat
+│   └── server.js       # Server entry point
+└── README.md           # Project documentation
